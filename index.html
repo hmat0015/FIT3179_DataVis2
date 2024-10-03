@@ -13,8 +13,8 @@
 </head>
 <body>
   
+<p>Below contains a graph showing the percentage of the population in each state in Australia who exercises at least 3 times a week.</p>
 <div id="choropleth_map"></div>
-<p>Above contains a graph showing the percentage of the population in each state in Australia who exercises at least 3 times a week.</p>
 <script type="text/javascript">
 
   var choropleth = "Australia_Activity_Level.vg.json";
@@ -22,5 +22,13 @@
   }).catch(console.error);
 </script>
 
+<p>Below is the breakdown of the age groups who exercises at least 3 times a week in each state.</p>
+<div id ="stacked_bar_chart"></div>
+<script type="text/javascript">
+
+  var stacked_bar_chart = "Australia_Activity_Demographic.vg.json";
+  vegaEmbed('#stacked_bar_chart', stacked_bar_chart).then(function(result) {
+  }).catch(console.error);
+</script>
 </body>
 </html>
