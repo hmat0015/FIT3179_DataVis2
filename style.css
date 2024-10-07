@@ -1,0 +1,33 @@
+.content-wrapper {
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+h1 {
+    font-family: 'Open Sans';
+    text-align: center;
+}
+
+p {
+    font-family: 'Open Sans';
+    text-align: center;
+}
+
+#choropleth_map {
+    display: flex;
+    justify-content: center;    
+}
+
+#stacked_bar_chart {
+    display: flex;
+    justify-content: center;    
+}
+
+td {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.description{
+    text-align: left;
+}

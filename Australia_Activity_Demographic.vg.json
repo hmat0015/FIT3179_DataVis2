@@ -1,8 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 330,
+    "width": 600,
     "height": 500,
-    "title": "Participation Rates in Physical Activities by Age Group Across Australian States.",
+    "title": "Participation Rates in Physical Activities by Age Group Across Australian States",
     "data": {
       "url": "https://raw.githubusercontent.com/hmat0015/FIT3179_DataVis2/refs/heads/main/Australia_Participation_Demographic.csv"
     },
