@@ -1,11 +1,15 @@
 .content-wrapper {
     max-width: 1200px;
     margin: 40px auto;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 60px;
 }
 
 h1 {
     font-family: 'Open Sans';
     text-align: center;
+    margin-top: 0px;
 }
 
 p {
@@ -28,6 +32,10 @@ td {
     padding-bottom: 20px;
 }
 
-.description{
+.description {
     text-align: left;
+}
+
+body {
+    background-color: azure;
 }
