@@ -31,11 +31,17 @@
         </td>
         <td>
           <p class="description">In this map, we take a look at the percentage of the population in each of Australia's states
-            who exercise more than 3 times a week. This is due to the fact that exercising 3 times a week is a
-            general consensus as to the recommended amount to exercise in a week. As we can see, Australian
+            who exercise more than 3 times a week form the year 2018 to 2023. This is due to the fact that exercising 3 times a week is a
+            general consensus as to the recommended amount to exercise in a week. As we can see, in 2023, Australian
             Capital Territory (ACT) is the state with the highest participation rate out of the population with 
-            67.9%, while Northern Territory (NT) is the lowest with 51.2%. Let's break it down further and see the 
-            age groups of the population who actively exercise at least 3 times a week.
+            67.9%, while Northern Territory (NT) is the lowest with 51.2%. Seeing the change throughout the years, we see that
+            Northern Territory (NT) went from having the highest participation rate to the lowest. It is also apparent that after the year 2020,
+            which is when COVID-19 happened, the participation rate has gradually decreased overall. Let's break it down further and see how
+            the different age groups and gender contribute to the participation rate in 2023.
+          </p>
+          <br>
+          <p id="interaction-info">
+            Move the slider vary the participation rate between the years.
           </p>
         </td>
       </tr>
@@ -49,17 +55,31 @@
             This graph illustrates the participation rates in physical activities across Australian states, broken down by age groups. 
             Each bar represents a state, with different segments indicating the percentage of people in each age group who engage in physical activities. 
             The shades of color correspond to specific age ranges, from 15-17 years old at the top (lightest) to 65+ years old at the bottom (darkest). 
-            Notably, states like the Northern Territory (NT) and South Australia (SA) have higher activity rates in younger populations, while other states 
-            like New South Wales (NSW) and Victoria (VIC) show a more balanced distribution of activity across age groups. This data provides insights into 
-            how physical activity varies both regionally and across different age demographics in Australia.
+            Notably, Australian Capital Territory (ACT) and Northern Territory (NT) are the only states where the largest contributor is the age group of 25-34, 
+            while other states all have the age group of 65+ contributing the most to the participation rate. This could be due to the fact that with higher age groups,
+            they are more likely to be retired, therefore allowing them to find more time to exercise. Another reason is that at that age, people tend to recognize how 
+            beneficial exercise is for their health.
           </p>
         </td>
       </tr>
-      
-      
-      
-    </table>
 
+      <tr>
+        <td>
+          <div id ="donut_charts"></div>
+        </td>
+        <td>
+          <p class="description">
+            The different donut charts represent the breakdown for the participation rate in each state by gender across Australian states.
+            It is apparent that for most of the states, <span class="f">females</span> contribute more to the participation rate compared to their <span class="m">male</span> conterparts,
+            with the only exceptions being Northern Territory (NT) and Southern Australia (SA). This article: 
+            <a href="https://www.abc.net.au/news/2017-01-24/women-more-active-than-men-nationwide-study-finds/8209146">
+              https://www.abc.net.au/news/2017-01-24/women-more-active-than-men-nationwide-study-finds/8209146
+            </a> 
+            says that it could be because <span class="f">women</span> are more focused on health as compared to <span class="m">men</span>.
+          </p>
+        </td>
+      </tr>
+    </table>
   </div>
   
 
@@ -72,6 +92,14 @@
 <script type="text/javascript">
   var stacked_bar_chart = "Australia_Activity_Demographic.vg.json";
   vegaEmbed('#stacked_bar_chart', stacked_bar_chart).then(function(result) {
+  }).catch(console.error);
+</script>
+</body>
+</html>
+
+<script type="text/javascript">
+  var donut_charts = "Gender_Participation.vg.json";
+  vegaEmbed('#donut_charts', donut_charts).then(function(result) {
   }).catch(console.error);
 </script>
 </body>

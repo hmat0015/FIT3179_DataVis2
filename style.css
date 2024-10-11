@@ -39,3 +39,16 @@ td {
 body {
     background-color: azure;
 }
+
+#interaction-info {
+    font-family: 'Open Sans';
+    font-style: italic;
+}
+
+.f {
+    color: #e41a1c;
+}
+
+.m {
+    color: #377eb8;
+}

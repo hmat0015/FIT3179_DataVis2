@@ -1,0 +1,217 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Participation Rates in Physical Activities by Gender",
+    "fontSize": 24
+  },
+  "vconcat": [
+    {
+      "hconcat": [
+        {
+          "width": 150,
+          "data": {
+            "url": "https://raw.githubusercontent.com/hmat0015/FIT3179_DataVis2/refs/heads/main/ACT_Gender.csv"
+          },
+          "encoding": {
+            "theta": {"field": "Participation rate by gender", "type": "quantitative", "stack": true},
+            "color": {"field": "Gender", "type": "nominal", "scale": {"range": ["#e41a1c", "#377eb8"]}, "legend": {"orient": "bottom"}}
+          },
+          "layer": [
+            {
+              "mark": { "type": "arc", "innerRadius": 50, "outerRadius": 80, "tooltip": true}
+            },
+            {
+              "mark": { "type": "text", "align": "center", "fontSize": 16},
+              "encoding": {"text": {"field": "State (Gender)"}, "color": {"value": "black"}}
+            },
+            {
+              "mark": {"type": "text", "radius": 36},
+              "encoding": {
+                "text": {"field": "Participation rate by gender", "type": "quantitative"}
+              }
+            }
+          ]
+        },
+        {
+          "width": 150,
+          "data": {
+            "url": "https://raw.githubusercontent.com/hmat0015/FIT3179_DataVis2/refs/heads/main/NSW_Gender.csv"
+          },
+          "encoding": {
+            "theta": {"field": "Participation rate by gender", "type": "quantitative", "stack": true},
+            "color": {"field": "Gender", "type": "nominal", "scale": {"range": ["#e41a1c", "#377eb8"]}}
+          },
+          "layer": [
+            {
+              "mark": { "type": "arc", "innerRadius": 50, "outerRadius": 80, "tooltip": true}
+            },
+            {
+              "mark": { "type": "text", "align": "center", "fontSize": 16},
+              "encoding": {"text": {"field": "State (Gender)"}, "color": {"value": "black"}}
+            },
+            {
+              "mark": {"type": "text", "radius": 36},
+              "encoding": {
+                "text": {"field": "Participation rate by gender", "type": "quantitative"}
+              }
+            }
+          ]
+        },
+        {
+          "width": 150,
+          "data": {
+            "url": "https://raw.githubusercontent.com/hmat0015/FIT3179_DataVis2/refs/heads/main/NT_Gender.csv"
+          },
+          "encoding": {
+            "theta": {"field": "Participation rate by gender", "type": "quantitative", "stack": true},
+            "color": {"field": "Gender", "type": "nominal", "scale": {"range": ["#e41a1c", "#377eb8"]}}
+          },
+          "layer": [
+            {
+              "mark": { "type": "arc", "innerRadius": 50, "outerRadius": 80, "tooltip": true}
+            },
+            {
+              "mark": { "type": "text", "align": "center", "fontSize": 16},
+              "encoding": {"text": {"field": "State (Gender)"}, "color": {"value": "black"}}
+            },
+            {
+              "mark": {"type": "text", "radius": 36},
+              "encoding": {
+                "text": {"field": "Participation rate by gender", "type": "quantitative"}
+              }
+            }
+          ]
+        },
+        {
+          "width": 150,
+          "data": {
+            "url": "https://raw.githubusercontent.com/hmat0015/FIT3179_DataVis2/refs/heads/main/QLD_Gender.csv"
+          },
+          "encoding": {
+            "theta": {"field": "Participation rate by gender", "type": "quantitative", "stack": true},
+            "color": {"field": "Gender", "type": "nominal", "scale": {"range": ["#e41a1c", "#377eb8"]}}
+          },
+          "layer": [
+            {
+              "mark": { "type": "arc", "innerRadius": 50, "outerRadius": 80, "tooltip": true}
+            },
+            {
+              "mark": { "type": "text", "align": "center", "fontSize": 16},
+              "encoding": {"text": {"field": "State (Gender)"}, "color": {"value": "black"}}
+            },
+            {
+              "mark": {"type": "text", "radius": 36},
+              "encoding": {
+                "text": {"field": "Participation rate by gender", "type": "quantitative"}
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hconcat": [
+        {
+          "width": 150,
+          "data": {
+            "url": "https://raw.githubusercontent.com/hmat0015/FIT3179_DataVis2/refs/heads/main/SA_Gender.csv"
+          },
+          "encoding": {
+            "theta": {"field": "Participation rate by gender", "type": "quantitative", "stack": true},
+            "color": {"field": "Gender", "type": "nominal", "scale": {"range": ["#e41a1c", "#377eb8"]}}
+          },
+          "layer": [
+            {
+              "mark": { "type": "arc", "innerRadius": 50, "outerRadius": 80, "tooltip": true}
+            },
+            {
+              "mark": { "type": "text", "align": "center", "fontSize": 16},
+              "encoding": {"text": {"field": "State (Gender)"}, "color": {"value": "black"}}
+            },
+            {
+              "mark": {"type": "text", "radius": 36},
+              "encoding": {
+                "text": {"field": "Participation rate by gender", "type": "quantitative"}
+              }
+            }
+          ]
+        },
+        {
+          "width": 150,
+          "data": {
+            "url": "https://raw.githubusercontent.com/hmat0015/FIT3179_DataVis2/refs/heads/main/TAS_Gender.csv"
+          },
+          "encoding": {
+            "theta": {"field": "Participation rate by gender", "type": "quantitative", "stack": true},
+            "color": {"field": "Gender", "type": "nominal", "scale": {"range": ["#e41a1c", "#377eb8"]}}
+          },
+          "layer": [
+            {
+              "mark": { "type": "arc", "innerRadius": 50, "outerRadius": 80, "tooltip": true}
+            },
+            {
+              "mark": { "type": "text", "align": "center", "fontSize": 16},
+              "encoding": {"text": {"field": "State (Gender)"}, "color": {"value": "black"}}
+            },
+            {
+              "mark": {"type": "text", "radius": 36},
+              "encoding": {
+                "text": {"field": "Participation rate by gender", "type": "quantitative"}
+              }
+            }
+          ]
+        },
+        {
+          "width": 150,
+          "data": {
+            "url": "https://raw.githubusercontent.com/hmat0015/FIT3179_DataVis2/refs/heads/main/VIC_Gender.csv"
+          },
+          "encoding": {
+            "theta": {"field": "Participation rate by gender", "type": "quantitative", "stack": true},
+            "color": {"field": "Gender", "type": "nominal", "scale": {"range": ["#e41a1c", "#377eb8"]}}
+          },
+          "layer": [
+            {
+              "mark": { "type": "arc", "innerRadius": 50, "outerRadius": 80, "tooltip": true}
+            },
+            {
+              "mark": { "type": "text", "align": "center", "fontSize": 16},
+              "encoding": {"text": {"field": "State (Gender)"}, "color": {"value": "black"}}
+            },
+            {
+              "mark": {"type": "text", "radius": 36},
+              "encoding": {
+                "text": {"field": "Participation rate by gender", "type": "quantitative"}
+              }
+            }
+          ]
+        },
+        {
+          "width": 150,
+          "data": {
+            "url": "https://raw.githubusercontent.com/hmat0015/FIT3179_DataVis2/refs/heads/main/WA_Gender.csv"
+          },
+          "encoding": {
+            "theta": {"field": "Participation rate by gender", "type": "quantitative", "stack": true},
+            "color": {"field": "Gender", "type": "nominal", "scale": {"range": ["#e41a1c", "#377eb8"]}}
+          },
+          "layer": [
+            {
+              "mark": { "type": "arc", "innerRadius": 50, "outerRadius": 80, "tooltip": true}
+            },
+            {
+              "mark": { "type": "text", "align": "center", "fontSize": 16},
+              "encoding": {"text": {"field": "State (Gender)"}, "color": {"value": "black"}}
+            },
+            {
+              "mark": {"type": "text", "radius": 36},
+              "encoding": {
+                "text": {"field": "Participation rate by gender", "type": "quantitative"}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

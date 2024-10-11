@@ -32,7 +32,7 @@
           "lookup": "State",
           "from": {
             "data": {
-              "url": "https://raw.githubusercontent.com/hmat0015/FIT3179_Homework_9/refs/heads/main/australia_states.json",
+              "url": "https://raw.githubusercontent.com/hmat0015/FIT3179_DataVis2/refs/heads/main/australia_states.json",
               "format": {
                 "type": "topojson",
                 "feature": "georef-australia-state-millesime"
